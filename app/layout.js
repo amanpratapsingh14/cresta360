@@ -17,6 +17,10 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://cresta360.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: "CRESTA 360",
   description:
     "Premium modular kitchens & home interiors. End-to-end design, manufacturing and installation with modern, luxury finishes.",
