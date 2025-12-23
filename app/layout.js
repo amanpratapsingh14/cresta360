@@ -2,6 +2,9 @@ import "./globals.css";
 import { Manrope, Playfair_Display } from "next/font/google";
 import ImageZoomProvider from "./components/image-zoom-provider";
 
+const PRIMARY_SITE_URL = "https://cresta360.in";
+const SECONDARY_SITE_URL = "https://cresta360.com";
+
 const manrope = Manrope({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
@@ -17,9 +20,13 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://cresta360.com"),
+  metadataBase: new URL(PRIMARY_SITE_URL),
   alternates: {
     canonical: "/",
+    languages: {
+      "en-IN": PRIMARY_SITE_URL,
+      en: SECONDARY_SITE_URL,
+    },
   },
   title: "CRESTA 360",
   description:
