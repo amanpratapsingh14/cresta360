@@ -229,7 +229,7 @@ export default function HomePage() {
     <>
       <div className="topbar">
         <div className="container topbar__inner">
-          <span className="topbar__tag">Luxury Interiors</span>
+          <span className="topbar__tag">Cresta 360 Interiors</span>
           <p className="topbar__text">
             Free design consultation • Transparent pricing • On-time installation
           </p>
