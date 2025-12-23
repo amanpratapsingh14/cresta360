@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Manrope, Playfair_Display } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import ImageZoomProvider from "./components/image-zoom-provider";
 
 const PRIMARY_SITE_URL = "https://cresta360.in";
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${manrope.variable} ${playfair.variable}`}>
       <body>
         <ImageZoomProvider>{children}</ImageZoomProvider>
+        <Analytics />
       </body>
     </html>
   );
